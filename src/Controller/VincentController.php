@@ -16,3 +16,12 @@ class VincentController extends AbstractController
         ]);
     }
 }
+{
+    #[Route('/Site', name: 'app_vincent')]
+    public function base(): Response
+    {
+        return $this->render('templates/base.html.twig', [
+            'controller_name' => 'VincentController',
+        ]);
+    }
+}
