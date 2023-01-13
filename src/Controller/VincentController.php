@@ -18,7 +18,7 @@ class VincentController extends AbstractController
 }
 {
     #[Route('/Site', name: 'app_vincent')]
-    public function base(): Response
+    public function index(): Response
     {
         return $this->render('templates/base.html.twig', [
             'controller_name' => 'VincentController',
