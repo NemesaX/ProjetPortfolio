@@ -15,11 +15,12 @@ class VincentController extends AbstractController
             'controller_name' => 'VincentController',
         ]);
     }
-    #[Route('/cv', name: 'app_cv')]
-    public function cv(): Response
+    #[Route('/CV', name: 'app_CV')]
+    public function CV(): Response
     {
-        return $this->render('vincent/cv.html.twig', [
+        return $this->render('/vincent/CV.html.twig', [
             'controller_name' => 'VincentController',
         ]);
     }
 }
+
