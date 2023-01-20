@@ -1,28 +1,24 @@
-<!DOCTYPE html>
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
 
  </html>
 </head>
 <body>
     <header>
- 
-        <ul class="navbar">
-            <li><a href="index.html.twig">Page d'accueil</a></li>
-            <li><a href="cv.index.html">CV</a></li>
-            <li><a href="portfolio.html.twig">Portfolio de compétences</a></li>
-            <div class="bx bx-moon" id="darkmode"></div>
-        </ul>
     </header>
  
-    <section class="home" id="home">
-        <div class="home-text">
-            <h1>VINCENT Léo</h1>
+    
+        <font size="+1">VINCENT Léo
+        </front>
             <h2>Etudiant</h2>
         </div>
  
     </section>
 
-    <section class="about" id="about">
-        <div class="heading">
+    
             <h2>A propos de moi</h2>
         </div>
         <div class="about-container">
@@ -73,3 +69,4 @@
     <script src="./js/script.js"></script>
 </body>
 </html>
+{% endblock %}
