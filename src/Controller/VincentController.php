@@ -8,17 +8,17 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class VincentController extends AbstractController
 {
-    #[Route('/Site', name: 'app_site')]
+    #[Route('/site', name: 'app_site')]
     public function index(): Response
     {
-        return $this->render('Site/index.html.twig', [
+        return $this->render('site/index.html.twig', [
             'controller_name' => 'VincentController',
         ]);
     }
     #[Route('/cv', name: 'app_cv')]
     public function CV(): Response
     {
-        return $this->render('/Site/cv.html.twig', [
+        return $this->render('/site/cv.html.twig', [
             'controller_name' => 'VincentController',
         ]);
     }
